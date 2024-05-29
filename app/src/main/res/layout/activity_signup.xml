@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/mainbackground"
-    tools:context=".SecondActivity">
+    tools:context=".SignUp">
 
 
     <TextView
@@ -16,24 +16,58 @@
         android:layout_height="wrap_content"
         android:text="Sign Up"
         android:layout_gravity="center"
+        android:textSize="20sp"
         android:layout_marginTop="10dp"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        app:startIconDrawable="@drawable/baseline_boy_24"
-        app:helperText="**Required">
+        android:layout_height="80dp"
+        app:helperText="**Required"
+        app:helperTextTextColor="#DF4141">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:hint="Name" />
+            android:layout_height="50dp"
+            android:hint="Name"
+            android:inputType="text"
+            android:drawableStart="@drawable/baseline_boy_24"
+            android:background="@drawable/greybackground"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:helperText="**Required"
+        app:helperTextTextColor="#DF4141">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/baseline_boy_24"
+            android:background="@drawable/greybackground"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:helperText="**Required"
+        app:helperTextTextColor="#DF4141"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/baseline_boy_24"
+            android:background="@drawable/greybackground"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Button" />
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="SIGN UP"/>
 </LinearLayout>
